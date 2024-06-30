@@ -1,0 +1,78 @@
+
+
+/* stories section */
+.stories-section {
+    background: rgb(0, 64, 71);
+    padding-top: 140px;
+    background-image: url(../images/stories-top-bg.svg);
+    background-repeat: no-repeat;
+}
+
+.stories-bottom-bg {
+    position: relative;
+    margin-top: 40px;
+    right: -1090px;
+}
+
+.stories {
+    align-items: start;
+}
+.stories-title {
+    color: $link-color;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.stories-title-color {
+    color: rgb(121, 200, 199);
+}
+.stories-triple {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+.first-story, .second-story, .third-story {
+    width: 350px; 
+}
+
+.second-story {
+    margin: 0 30px 0 30px;
+}
+
+.stories-icon {
+    text-align: center;
+    margin: 0 141px -23px 141px;
+}
+.first-story-text {
+    color: $link-color;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.first-story-name {
+    margin: 20px 0 2px 0;
+    display: block;
+    color: rgb(121, 200, 199);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.first-story-job {
+    color: $link-color;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.first-story-img {
+    margin: 30px 144px 0 144px;
+}

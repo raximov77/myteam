@@ -1,0 +1,43 @@
+
+
+/* ready section */
+.ready-section {
+    background-color: $link-hover;
+    background-image: url(../images/ready-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.ready-wrapper {
+    padding: 76px 0 76px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 260px;
+}
+.ready-title {
+    color: rgb(1, 47, 52);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+}
+.ready-contact-us-link {
+    color: rgb(1, 47, 52);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    width: 153px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(1, 47, 52);
+    border-radius: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    transition: 0.3s color linear;
+}
+
+.ready-contact-us-link:hover {
+    color: $link-color;
+    background-color: rgb(1, 47, 52);
+}
