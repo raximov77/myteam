@@ -1,0 +1,33 @@
+
+
+@mixin display($items, $space, $gap){
+    display: flex;
+    align-items: $items;
+    justify-content: $space;
+    gap: $gap;
+}
+@mixin textStyle($FS, $FW, $LH, $MB, $CLR){
+    margin-bottom: $MB;
+    font-size: $FS;
+    font-weight: $FW;
+    line-height: $LH;
+    color: $CLR;
+}
+@mixin btnStyle($W, $PY, $BorderColor, $BgColor, $BtnFS, $BtnFW, $BtnLH,$BtnMB, $BtnTextColor, $HoverBG, $HoverColor){
+    display: inline-block;
+    width: $W;
+    padding: $PY 0;
+    border-radius: 30px;
+    border: 2px solid $BorderColor;
+    background-color: $BgColor;
+    text-align: center;
+    cursor: pointer;   
+    transition: all 0.3s linear;
+    
+    &:hover{
+        background-color: $HoverBG;
+        color: $HoverColor;
+    }
+
+    @include textStyle($FS:$BtnFS, $FW:$BtnFW, $LH:$BtnLH, $MB:$BtnMB, $CLR:$BtnTextColor);
+}

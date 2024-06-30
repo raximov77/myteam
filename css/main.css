@@ -1,0 +1,223 @@
+@font-face {
+  font-display: swap;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/livvic-v14-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/livvic-v14-latin-700.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Livvic";
+}
+
+body {
+  background-color: rgb(1, 78, 86);
+}
+
+.header, .hero, .build {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Site Header */
+.site-header {
+  padding: 73px 0 129px;
+}
+
+.header-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar-link {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  transition: 0.3s color linear;
+}
+
+.navbar-link:hover {
+  color: #F67E7E;
+}
+
+.header-contact-us-link {
+  width: 153px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 24px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  transition: 0.3s color linear;
+}
+
+.header-contact-us-link:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(1, 78, 86);
+}
+
+.header-hamburger-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Tablet startr */
+@media only screen and (max-width: 800px) {
+  .site-header {
+    padding: 64px 0 112px;
+  }
+  .header-logo-img {
+    width: 128px;
+    height: 32px;
+  }
+  .header-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+}
+/* Tablet end */
+/* Mobile start */
+@media only screen and (max-width: 600px) {
+  .site-header {
+    padding: 48px 0 80px;
+  }
+  .header-logo-img {
+    width: 128px;
+    height: 32px;
+  }
+  .navbar-list {
+    display: none;
+  }
+  .header-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
+  .header-contact-us-link {
+    display: none;
+  }
+  .header-hamburger-btn {
+    display: block;
+  }
+}
+/* Hero section */
+.hero-section {
+  background-image: url(../../images/hero-section-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  position: relative;
+  background-position: -100px top;
+}
+
+.hero {
+  padding-bottom: 173px;
+  background-image: url(../../images/hero-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 358px 100px;
+  background-position: bottom right;
+}
+
+.hero-title-wrapper {
+  width: 525px;
+  margin-left: 31px;
+}
+
+.hero-title {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0px;
+  color: rgb(255, 255, 255);
+}
+
+.hero-title-color {
+  color: #F67E7E;
+}
+
+.hero-text-wrapper {
+  width: 445px;
+  margin-bottom: 105px;
+}
+
+.hero-text-line {
+  margin-bottom: 79px;
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-color: rgb(121, 200, 199);
+}
+
+.hero-text {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+/* Tablet startr */
+@media only screen and (max-width: 800px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../images/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 358px 100px;
+    background-position: center bottom;
+  }
+}
+/* Tablet end */
+/* Mobile start *//*# sourceMappingURL=main.css.map */
