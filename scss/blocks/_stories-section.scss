@@ -76,3 +76,14 @@
 .first-story-img {
     margin: 30px 144px 0 144px;
 }
+
+/* Tablet */
+@media only screen and (max-width:800px) {
+    .stories-section {
+        text-align: center;
+    }
+    .stories-triple {
+        display: flex;
+        flex-direction: column;
+    }
+}
