@@ -41,3 +41,52 @@
     color: $link-color;
     background-color: rgb(1, 47, 52);
 }
+
+/* Table */
+@media only screen and (max-width:800px) {
+    .ready-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .ready-wrapper {
+        padding: 84px 0 84px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 84px;
+    }
+    .ready-title {
+        width: 336px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .ready-contact-us-link {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        width: 88px;
+        padding: 10px 0;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width:600px) {
+    .ready-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .ready-title {
+        width: 336px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .ready-contact-us-link {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        width: 88px;
+        padding: 10px 0;
+    }
+}
