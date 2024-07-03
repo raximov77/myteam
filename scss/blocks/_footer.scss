@@ -17,7 +17,6 @@
     margin-top: 21px;
     display: flex;
     gap: 40px;
-    
 }
 
 .footer-link {
@@ -92,12 +91,24 @@
 
 /* Tablet */
 @media only screen and (max-width:800px) {
-        
+    .site-footer {
+        padding: 56px 40px;  
+    }
+    .footer-icon-content {
+        display: none;
+    }
 }
 
 
 
 /* Mobile */
-@media only screen and (max-width:800px) {
-
+@media only screen and (max-width:600px) {
+    .site-footer {
+        padding: 65px 24px;  
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }  
 }
